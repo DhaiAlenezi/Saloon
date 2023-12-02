@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Hair Dresser Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <style>
+        .review .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.review .box-container .box {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.review .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--black);
+    padding: 2rem 0;
+}
+
+.review .box-container .box h3 {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.review .box-container .box .stars i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+    </style>
+
+<body>
+
+        <!-- header -->
+        <section class="header">
+            <a href="#" class="logo"> Hair dresser </a>
+            <nav class="navbar">
+                <div id="close-navbar" class="fas fa-times"></div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="styles.html">Styles</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contact.html">Contact</a>
+                <a href="review.html">Review</a>
+                <a href="members.html">Members</a>
+            </nav>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+        <!-- header -->
+
+        <!-- reviews -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading">Customer's Review</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi
+                    nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus
+                    vel? Nemo.</p>
+                <img src="images/review-3.jpg" class="user" alt="">
+                <h3>derek rude</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi
+                    nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus
+                    vel? Nemo.</p>
+                <img src="images/review-2.png" class="user" alt="">
+                <h3>jenny white</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi
+                    nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus
+                    vel? Nemo.</p>
+                <img src="images/review-3.jpg" class="user" alt="">
+                <h3>kate mudton</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- reviews end -->
+
+    <!-- footer -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> Find us here </h3>
+                <p>Our Page on Social Media </p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>contact us</h3>
+                <p> +966543252714</p>
+                <a href="#" class="link"> LayanAbdurahman@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>localization</h3>
+                <p>Saudia Arabia</p>
+            </div>
+
+        </div>
+
+        <div class="credit"> created by <span> Layan Abdurahman</span> | all rights reserved! </div>
+
+    </section>
+    <!-- footer end-->
+</body>
+</html>

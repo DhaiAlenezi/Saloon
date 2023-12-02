@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Hair Dresser Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <style>
+.services {
+    background-color: var(--main-color);
+}
+
+.services .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+}
+
+.services .box-container .box {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.services .box-video {
+    margin-top: 60px;
+    margin-left: 12%;
+}
+
+.services .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.services .box-container .box:hover img {
+    transform: scale(1.1);
+}
+
+.services .box-container .box .content {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background: var(--dark-bg);
+}
+
+.services .box-container .box .content h3 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--white);
+    padding-top: 40rem;
+    text-transform: capitalize;
+}
+
+.services .box-container .box:hover .content {
+    display: flex;
+}
+    </style>
+
+<body>
+
+        <!-- header -->
+        <section class="header">
+            <a href="#" class="logo"> Hair dresser </a>
+            <nav class="navbar">
+                <div id="close-navbar" class="fas fa-times"></div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="styles.html">Styles</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contact.html">Contact</a>
+                <a href="review.html">Review</a>
+                <a href="members.html">Members</a>
+            </nav>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+        <!-- header -->
+
+        <section class="services" id="services">
+
+            <h1 class="heading">premium services</h1>
+    
+            <div class="box-container">
+    
+                <div class="box">
+                    <img src="images/services-1.jpg" alt="">
+                    <div class="content">
+                        <h3>Hair styling</h3>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <img src="images/services-2.jpg" alt="">
+                    <div class="content">
+                        <h3>wedding service </h3>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <img src="images/blog2.jpg" alt="">
+                    <div class="content">
+                        <h3>wedding</h3>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <img src="images/blog3.jpg" alt="">
+                    <div class="content">
+                        <h3>wedding</h3>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="box-video">
+                <video autoplay controls src="video.mp4"></video>
+            </div>
+    
+        </section>
+    
+        <!-- services end -->
+    <!-- footer -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> Find us here </h3>
+                <p>Our Page on Social Media </p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>contact us</h3>
+                <p> +966543252714</p>
+                <a href="#" class="link"> LayanAbdurahman@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>localization</h3>
+                <p>Saudia Arabia</p>
+            </div>
+
+        </div>
+
+        <div class="credit"> created by <span> LayanAbdurahman</span> | all rights reserved! </div>
+
+    </section>
+    <!-- footer end-->
+</body>
+</html>

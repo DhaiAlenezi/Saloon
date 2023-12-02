@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Hair Dresser Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <style>
+        .pricing {
+    background: url('images/pricing.jpg');
+    background-attachment: fixed;
+}
+
+.pricing .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pricing .box-container .box {
+    height: 500px;
+    width: 280px;
+    margin: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .9);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background: var(--primary-color);
+}
+
+.pricing .box-container .box::before,
+.pricing .box-container .box:after {
+    content: '';
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    opacity: .5;
+}
+
+.pricing .box-container .box::before {
+    background: var(--light-bg);
+    top: -10%;
+    left: 80%;
+}
+
+.pricing .box-container .box::after {
+    background: var(--main-color);
+    bottom: -10%;
+    right: 80%;
+}
+
+.pricing .box-container .box .title {
+    margin: 30px 0;
+    font-size: 26px;
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+
+.pricing .box-container .box .price {
+    height: 160px;
+    width: 160px;
+    color: var(--white);
+    background: var(--main-color);
+    padding: 57px 0 0;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+}
+
+.pricing .box-container .box .price .currency {
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 300;
+}
+
+.pricing .box-container .box .price .amount {
+    font-size: 58px;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+.pricing .box-container .box ul li {
+    text-align: left;
+    font-size: 16px;
+    padding-left: 45px;
+    margin: 20px auto;
+    color: var(--white);
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.pricing .box-container .box ul li i {
+    color: var(--main-color);
+    padding: 0 10px;
+}
+
+.pricing .box-container .box button {
+    height: 40px;
+    width: 140px;
+    outline: none;
+    border-radius: 50px;
+    text-transform: capitalize;
+    cursor: pointer;
+    background: none;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    font-size: 17px;
+    font-weight: bold;
+    transition: .2s linear;
+}
+
+.pricing .box-container .box button:hover {
+    color: var(--white);
+    background: var(--main-color);
+}
+    </style>
+
+<body>
+
+        <!-- header -->
+        <section class="header">
+            <a href="#" class="logo"> Hair dresser </a>
+            <nav class="navbar">
+                <div id="close-navbar" class="fas fa-times"></div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="styles.html">Styles</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contact.html">Contact</a>
+                <a href="review.html">Review</a>
+                <a href="members.html">Members</a>
+            </nav>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+        <!-- header -->
+
+        <!-- pricing -->
+
+    <section class="pricing" id="pricing">
+
+        <h1 class="heading">offer and Pricing</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3 class="title">basic</h3>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="amount">10</span>
+                </div>
+                <ul>
+                    <li> <i class="fas fa-check"></i> Simple Haircut </li>
+                    <li> <i class="fas fa-check"></i> Hair Plugs </li>
+                    <li> <i class="fas fa-check"></i> Styling</li>
+                    <li> <i class="fas fa-check"></i> Braiding</li>
+                </ul>
+                <a href="#"><button>book a visit</button></a>
+            </div>
+
+            <div class="box">
+                <h3 class="title">standard</h3>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="amount">20</span>
+                </div>
+                <ul>
+                    <li> <i class="fas fa-check"></i> Styling</li>
+                    <li> <i class="fas fa-check"></i> Simple Haircut </li>
+                    <li> <i class="fas fa-check"></i> Color Correction</li>
+                    <li> <i class="fas fa-check"></i> Perms</li>
+                </ul>
+                <a href="#"><button>book a visit</button></a>
+            </div>
+
+            <div class="box">
+                <h3 class="title">premium</h3>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="amount">30</span>
+                </div>
+                <ul>
+                    <li> <i class="fas fa-check"></i>Perms </li>
+                    <li> <i class="fas fa-check"></i>Extensions </li>
+                    <li> <i class="fas fa-check"></i>Styling </li>
+                    <li> <i class="fas fa-check"></i>Braiding</li>
+                </ul>
+                <a href="#"><button>book a visit</button></a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- pricing end -->
+
+      <!-- footer -->
+
+      <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> Find us here </h3>
+                <p>Our Page on Social Media </p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>contact us</h3>
+                <p>+966504856212</p>
+                <a href="#" class="link">RznaAbdulrazag@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>localization</h3>
+                <p>Saudia Arabia</p>
+            </div>
+
+        </div>
+
+        <div class="credit"> created by <span>Rzna Abdulrazag</span> | all rights reserved! </div>
+
+    </section>
+    <!-- footer end-->
+
+    
+</body>
+</html>

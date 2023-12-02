@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Hair Dresser Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<style>
+    .blogs .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+}
+
+.blogs .box-container .box {
+    background: var(--primary-color);
+}
+
+.blogs .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.blogs .box-container .box .image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.blogs .box-container .box:hover .image img {
+    transform: scale(1.2);
+}
+
+.blogs .box-container .box .content {
+    padding: 2rem;
+}
+
+.blogs .box-container .box .content .title {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: var(--white);
+}
+
+.blogs .box-container .box .content .title:hover {
+    color: var(--main-color);
+}
+
+.blogs .box-container .box .content span {
+    color: var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.blogs .box-container .box .content p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--white);
+    padding: 1rem 0;
+}
+</style>
+
+<body>
+        <!-- header -->
+        <section class="header">
+            <a href="#" class="logo"> Hair dresser </a>
+            <nav class="navbar">
+                <div id="close-navbar" class="fas fa-times"></div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="styles.html">Styles</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contact.html">Contact</a>
+                <a href="review.html">Review</a>
+                <a href="members.html">Members</a>
+            </nav>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+        <!-- header -->
+
+        <!-- blog -->
+
+    <section class="blogs" id="blog">
+
+        <h1 class="heading"> our blogs </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Styling hair service</a>
+                    <span>by admin / 28th November, 2023</span>
+                    <p>"Enjoy a unique experience with our online hair styling service.
+                         We offer the latest trends in hairstyles and designs, allowing you to choose the perfect style for every occasion. A team of professionals ensures a luxurious styling experience, helping you achieve elegant and distinctive looks."
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Styling hair service</a>
+                    <span>by admin / 28th November, 2023</span>
+                    <p>"Enjoy a unique experience with our online hair styling service.
+                         We offer the latest trends in hairstyles and designs, allowing you to choose the perfect style for every occasion. A team of professionals ensures a luxurious styling experience, helping you achieve elegant and distinctive looks."
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Styling hair service</a>
+                    <span>by admin / 28th November, 2023</span>
+                    <p>"Enjoy a unique experience with our online hair styling service. 
+                        We offer the latest trends in hairstyles and designs, allowing you to choose the perfect style for every occasion. A team of professionals ensures a luxurious styling experience, helping you achieve elegant and distinctive looks."
+
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- blog end-->
+
+    <!-- footer -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> Find us here </h3>
+                <p>Our Page on Social Media </p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>contact us</h3>
+                <p>+966504856212</p>
+                <a href="#" class="link">RznaAbdulrazag@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>localization</h3>
+                <p>Saudia Arabia</p>
+            </div>
+
+        </div>
+
+        <div class="credit"> created by <span>RznaAbdulrazag</span> | all rights reserved! </div>
+
+    </section>
+    <!-- footer end-->
+
+
+    
+</body>
+</html>

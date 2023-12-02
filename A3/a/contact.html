@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Hair Dresser Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <style>
+        .visit {
+    background: url('images/visit.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.visit .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.visit .row .image {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+    flex: 1 1 40rem;
+}
+
+.visit .row .image img {
+    width: 100%;
+}
+
+.visit .row form {
+    flex: 1 1 40rem;
+    border: 0.1rem solid var(--main-color);
+    padding: 2rem;
+}
+
+.visit .row form h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--main-color);
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.visit .row form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--main-color);
+    border: var(--border);
+}
+
+.visit .row form .inputBox input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: var(--white);
+    text-transform: none;
+    background: none;
+}
+    </style>
+
+<body>
+
+        <!-- header -->
+        <section class="header">
+            <a href="#" class="logo"> Hair dresser </a>
+            <nav class="navbar">
+                <div id="close-navbar" class="fas fa-times"></div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="styles.html">Styles</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contact.html">Contact</a>
+                <a href="review.html">Review</a>
+                <a href="members.html">Members</a>
+            </nav>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+        <!-- header -->
+
+        <!-- visit -->
+
+    <section class="visit" id="visit">
+
+        <h1 class="heading"> Contact </h1>
+
+        <div class="row">
+
+            <form action="">
+                <h3>book your first visit today</h3>
+                <div class="inputBox">
+                    <input type="text" placeholder="Your name">
+                </div>
+                <div class="inputBox">
+                    <input type="email" placeholder="Your e-mail">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Message">
+                </div>
+
+
+                <input type="submit" value="Send A Message" class="btn">
+            </form>
+
+            <div class="image">
+                <img src="images/contact.jpg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- visit end-->
+
+    <!-- footer -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> Find us here </h3>
+                <p>Our Page on Social Media </p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>contact us</h3>
+                <p>+966553274428</p>
+                <a href="#" class="link">DhaiHomoud@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <h3>localization</h3>
+                <p>Saudia Arabia</p>
+            </div>
+
+        </div>
+
+        <div class="credit"> created by <span>Dhai Homoud</span> | all rights reserved! </div>
+
+    </section>
+    <!-- footer end-->
+
+
+</body>
+</html>

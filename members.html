@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Hair Dresser Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <style>
+.members{
+    margin-top: 50px;
+    background: url(images/about-left.png) no-repeat;
+    height: 100%;
+    
+}
+.members .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.members .row .studentdive {
+    flex: 1 1 39rem;
+    margin-top: -60px;
+}
+
+.studentdive .student {
+    list-style: disc;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.studentdive .student li {
+    height: 30px;
+    padding-top: 5px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    background-color:var(--primary-color) ;
+    color: white;
+    border-radius: 25px;
+}
+
+.studentdive .student li:hover{
+    background-color:var(--hover) ;
+}
+
+.members .row .content {
+    flex: 1 1 51rem;
+    padding: 5rem;
+}
+
+.members .row .content h3 {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+.members .row .content p {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+.members .row .content button{
+    padding: 3px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+.members .row .content button:hover{
+    background-color:var(--hover) ;
+}
+.members .row .content button a{
+    text-decoration: none;
+    color:var(--white);
+}
+
+.members .row .content ol li {
+    font-size: 1.6rem;
+    color: #444;
+    padding: 0rem 0;
+    line-height: 1.8;
+}
+.members .row .content ol li ul {
+    margin-left: 20px;
+}
+
+    </style>
+<body>
+        <!-- header -->
+        <section class="header">
+            <a href="#" class="logo"> Hair dresser </a>
+            <nav class="navbar">
+                <div id="close-navbar" class="fas fa-times"></div>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="styles.html">Styles</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contact.html">Contact</a>
+                <a href="review.html">Review</a>
+                <a href="members.html">Members</a>
+            </nav>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+        <!-- header -->
+
+        <!-- members -->
+        <section class="members" id="members">
+
+            <!-- <h1 class="heading">Members Name</h1> -->
+    
+            <div class="row">
+                
+                <div class="studentdive">
+                    <h1 class="heading">Members Name</h1>
+                    <ul class="student" id="student">
+                        <li>Dhai Homoud Alenzi</li>
+                        <li>Rzna Abdulrazag Alblawi</li>
+                        <li>Layan Abdurahman Alatwi</li>
+                    </ul>
+                    <!-- <div class="student"><p>Dhai Homoud Alenzi</p></div>
+                    <div class="student"><p>Rzna Abdulrazag Alblawi</p></div>
+                    <div class="student"><p>Layan Abdurahman Alatwi</p></div> -->
+                </div>
+    
+                <div class="content">
+                    <h3 class="title">Members Information</h3>
+                    <ol type="1" >
+                        <li>The First name is :
+                            <ul>
+                             <li>  Name is : Dhai Homoud Alenzi</li>
+                             <li>  The Number Of Student is : 421007654</li>
+                            </ul>
+                        </li>
+                        
+                        <li>The Second Nme is :
+                            <ul>
+                             <li>  Name is : Rzna Abdulrazag Alblawi</li>
+                             <li>  The Number Of Student is : 431007788</li>
+                            </ul>
+                        </li>
+
+                        <li>The Third Nme is :
+                            <ul>
+                             <li>  Name is : Layan Abdurahman Alatwi</li>
+                             <li>  The Number Of Student is :431002967</li>
+                            </ul>
+                        </li>
+
+                    </ol>
+                    <p><strong>Note:</strong> if you want to see more InformationClick to this link</p>
+                    <button type="button"><a href="information.html">This link</a></button>
+                </div>
+            </div>
+    
+        </section>
+    
+        <!--  members end -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Get the list and shuffle its children
+                var list = document.getElementById("student");
+                var listItems = Array.from(list.children);
+    
+                function shuffleArray(array) {
+                    for (let i = array.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [array[i], array[j]] = [array[j], array[i]];
+                    }
+                }
+    
+                shuffleArray(listItems);
+    
+                // Remove the existing list items and append the shuffled ones
+                list.innerHTML = "";
+                listItems.forEach(function (item) {
+                    list.appendChild(item);
+                    item.style.display = "block"; // Display the items after shuffling
+                });
+            });
+    
+        </script>
+</body>
+</html>

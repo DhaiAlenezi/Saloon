@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Hair Dresser Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <style>
+.information {
+    min-height: 100vh;
+    display: block;
+    align-items: center;
+    background: url(images/pricing.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--main-color);
+}
+
+.information .content {
+    max-width: 60rem;
+    text-align: center;
+    margin-left:20%;
+}
+
+.information .content .btn {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    width: 45%;
+    border-radius: 30px;
+    
+}
+
+    </style>
+<body>
+    <section class="information" id="information">
+        <div class="content">
+            <div class="btn" onclick="moreInfo('std1')">
+                <p>Dhai Homoud Alenzi</p>
+            </div>
+            <div class="btn" onclick="moreInfo('std2')">
+                <p>Rzna Abdulrazag Alblawi</p>
+            </div>
+            <div class="btn" onclick="moreInfo('std3')">
+                <p>Layan Abdurahman Alatwi</p>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        function moreInfo(pageName){
+            switch (pageName){
+                case 'std1':window.location.href='firststudent.html';
+                break;
+                case 'std2':window.location.href='scoundstudent.html';
+                break;
+                case 'std3':window.location.href='thirdstudent.html';
+                break;
+                default:break;
+            }
+        }
+    </script>
+</body>
+</html>
